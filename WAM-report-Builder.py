@@ -30,6 +30,3 @@ def get_pyg_html(df: pd.DataFrame) -> str:
 @st.cache_data
  
 components.html(get_pyg_html(df), width=1300, height=1000, scrolling=True)
-
-# Call the function
-upload_csv()
