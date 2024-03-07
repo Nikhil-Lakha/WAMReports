@@ -4,6 +4,9 @@ import pandas as pd
 import streamlit.components.v1 as components
 from pygwalker.api.streamlit import init_streamlit_comm, get_streamlit_html
 
+# Set Streamlit to be wide by default
+st.set_page_config(layout="wide", page_title="Vodapay Dashboard", initial_sidebar_state="collapsed")
+
 # Set up Streamlit app
 st.title('CSV Upload and Display App')
 
