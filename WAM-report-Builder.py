@@ -14,7 +14,7 @@ st.title('CSV Upload and Display App')
 def upload_csv():
     uploaded_file = st.file_uploader("Upload CSV file", type=['csv'])
     if uploaded_file is not None:
-        df = pd.read_csv(uploaded_file, sep=';')
+        df = pd.read_csv(uploaded_file, sep=',')
         st.write("### Uploaded DataFrame:")
         st.write(df)
         return df  # Return the DataFrame for caching
