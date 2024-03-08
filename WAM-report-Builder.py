@@ -36,7 +36,7 @@ def main():
     if df is not None:
         html_content = get_pyg_html(df)  # Get the PygWalker HTML content
         # Render the HTML content using components.html
-        components.html(html_content, width=1200, height=1000, scrolling=True)
+        components.html(html_content, width=1500, height=1000, scrolling=True)
 
 if __name__ == "__main__":
     main()
